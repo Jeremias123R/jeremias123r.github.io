@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.presentacion {
+  background-color: #0f2b3d;
+  color: white;
+  padding: 40px 20px;
+}
+
+.presentacion h1 {
+  font-size: 2.2rem;
+  margin: 0 0 8px;
+  letter-spacing: -1px;
+}
+
+.rol {
+  font-size: 1.1rem;
+  color: #5ec4d6;
+  margin: 0 0 12px;
+}
+
+.intro {
+  color: #d6e6ee;
+  margin: 0;
+  max-width: 600px;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.proyectos h2 {
+  margin: 10px 0 20px;
+}
+
+.proyecto {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto h3 {
+  margin: 0 0 8px;
+  color: #1f6f8b;
+}
+
+.proyecto p {
+  margin: 0 0 10px;
+}
+
+.destacado {
+  border-left: 5px solid #5ec4d6;
+}
+
+.tecnologias {
+  font-size: 0.9rem;
+  color: #6b7f8c;
+}
+
+.demo {
+  background-color: #eef6f9;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.proyecto a {
+  display: inline-block;
+  margin: 6px 8px 0 0;
+  padding: 8px 14px;
+  background-color: #1f6f8b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #6b7f8c;
+}
+
+@media (min-width: 800px) {
+  .presentacion {
+    padding: 60px calc((100% - 900px) / 2 + 20px);
+  }
+
+  .presentacion h1 {
+    font-size: 3rem;
+  }
+  }
