@@ -1,0 +1,445 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #F5F7FA;
+    color: #17212B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    padding: 22px 0;
+    border-bottom: 1px solid #DCE2E7;
+    background: #FFFFFF;
+}
+
+nav {
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+}
+
+nav a {
+    color: #52616B;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #167C80;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+#inicio {
+    padding: 35px 0 35px;
+}
+
+#inicio span,
+#proyectos > span,
+#habilidades > span,
+#contacto > span {
+    color: #167C80;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+#inicio h1 {
+    margin: 18px 0;
+
+    max-width: 760px;
+
+    color: #17212B;
+
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+#inicio p {
+    max-width: 650px;
+
+    margin: 0 0 25px;
+
+    color: #5D6B75;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#inicio > a {
+    display: inline-block;
+
+    padding: 13px 20px;
+
+    background: #167C80;
+    color: #FFFFFF;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#inicio > a:hover {
+    background: #0F6266;
+}
+
+
+/* =========================
+   PROYECTOS
+========================= */
+
+#proyectos {
+    padding: 30px 0 35px;
+}
+
+#proyectos h2,
+#habilidades h2,
+#contacto h2 {
+    margin: 8px 0 24px;
+
+    color: #17212B;
+
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+#listaProyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.proyecto {
+    padding: 21px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #DCE2E7;
+    border-radius: 10px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-3px);
+    border-color: #9BCBCD;
+}
+
+.proyecto h3 {
+    margin: 0 0 10px;
+
+    color: #17212B;
+    font-size: 21px;
+}
+
+.proyecto p {
+    margin: 0 0 18px;
+
+    color: #64727C;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.proyecto span {
+    display: inline-block;
+
+    padding: 6px 9px;
+
+    background: #F0F5F6;
+    border: 1px solid #DCE7E8;
+    border-radius: 5px;
+
+    color: #167C80;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.proyecto a {
+    display: inline-block;
+
+    margin-top: 10px;
+    margin-right: 8px;
+
+    color: #167C80;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.proyecto a:hover {
+    color: #0F6266;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.proyecto a:hover {
+    color: #167C80;
+}
+
+
+/* =========================
+   HABILIDADES
+========================= */
+
+#habilidades {
+    padding: 20px 0;
+
+    border-top: 1px solid #DCE2E7;
+}
+
+#habilidades > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#habilidades p {
+    margin: 0;
+
+    padding: 10px 14px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #DCE2E7;
+    border-radius: 7px;
+
+    color: #40515B;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+#contacto {
+    padding: 35px 0;
+
+    border-top: 1px solid #DCE2E7;
+}
+
+#contacto p {
+    max-width: 600px;
+
+    margin: 0 0 28px;
+
+    color: #5D6B75;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+#contacto > a {
+    display: inline-block;
+
+    padding: 13px 20px;
+
+    background: #167C80;
+    color: #FFFFFF;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#contacto > a:hover {
+    background: #0F6266;
+}
+
+
+/* =========================
+   BOTÓN GITHUB
+========================= */
+
+#contacto > a + a {
+    margin-left: 8px;
+
+    padding: 10px 14px;
+
+    background: transparent;
+    color: #167C80;
+
+    border: 1px solid #B8CDCE;
+
+    font-size: 13px;
+}
+
+#contacto > a + a:hover {
+    background: #EAF5F6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 25px 0;
+
+    border-top: 1px solid #DCE2E7;
+
+    color: #697780;
+
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* =========================
+   TABLET Y MÓVIL
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        justify-content: center;
+        gap: 22px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    #inicio {
+        padding: 25px 0 25px;
+    }
+
+    #inicio h1 {
+        margin: 14px 0;
+
+        font-size: 40px;
+        line-height: 1.08;
+        letter-spacing: -1.5px;
+    }
+
+    #inicio p {
+        margin-bottom: 20px;
+
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    #proyectos {
+        padding: 25px 0 30px;
+    }
+
+    #proyectos h2,
+    #habilidades h2,
+    #contacto h2 {
+        font-size: 32px;
+    }
+
+    #listaProyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto {
+        padding: 22px;
+    }
+
+    #contacto > a + a {
+        margin-left: 5px;
+    }
+}
+
+
+/* =========================
+   TELÉFONOS PEQUEÑOS
+========================= */
+
+@media (max-width: 480px) {
+
+    main {
+        width: calc(100% - 24px);
+    }
+
+    header {
+        padding: 18px 0;
+    }
+
+    nav {
+        gap: 16px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    #inicio {
+        padding: 22px 0 20px;
+    }
+
+    #inicio span,
+    #proyectos > span,
+    #habilidades > span,
+    #contacto > span {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+
+    #inicio h1 {
+        font-size: 36px;
+        line-height: 1.08;
+    }
+
+    #inicio p {
+        font-size: 15px;
+    }
+
+    #inicio > a {
+        padding: 12px 17px;
+    }
+
+    #proyectos h2,
+    #habilidades h2,
+    #contacto h2 {
+        font-size: 29px;
+    }
+
+    #contacto > a {
+        padding: 12px 16px;
+    }
+
+    #contacto > a + a {
+        padding: 10px 12px;
+    }
+}
